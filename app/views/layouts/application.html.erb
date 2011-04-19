@@ -7,8 +7,44 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
-
-<%= yield %>
+	<div id="fb-root">
+	    </div>
+	    <div class="page">
+	        <div id="header">
+	            <div id="container">
+	                <div id="logo">
+	                    Now What Movement
+	                </div>
+	            </div>
+	        </div>
+	        <div id="content">
+	            <div id="container">
+	                <div id="left-sidebar">
+	                    <h1>
+	                        A Gathering of Students for:</h1>
+	                    <ul id="menu">
+	                        <li><a href="/worship" 		onmouseover="document.worship.src='/images/worship-hov.png'"
+	                            onmouseout="document.worship.src='/images/worship.png'">
+	                            <img name="worship" src="/images/worship.png" /></a> </li>
+	                        <li><a href="/gospel" onmouseover="document.gospel.src='/images/gospel-hov.png'"
+	                            onmouseout="document.gospel.src='/images/gospel.png'">
+	                            <img name="gospel" src="/images/gospel.png" /></a> </li>
+	                        <li><a href="/missions" onmouseover="document.missions.src='/images/mission-hov.png'"
+	                            onmouseout="document.missions.src='/images/missions.png'">
+	                            <img name="missions" src="/images/missions.png" /></a> </li>
+	                    </ul>
+	                </div>
+	                <div id="right-sidebar">
+						<%= yield %>
+	                </div>
+	            </div>
+	        </div>
+	        <div id="footer">
+	            <div id="container">
+	                An IdleFusion Project
+	            </div>
+	        </div>
+	    </div>
 
 </body>
 </html>
