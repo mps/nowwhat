@@ -3,6 +3,7 @@ Nowwhat::Application.routes.draw do
   match 'worship' => 'home#worship'
   match 'gospel' => 'home#gospel'
   match 'missions' => 'home#missions'
+  match 'index' => 'home#index'
   
   root :to => 'home#index'
   
