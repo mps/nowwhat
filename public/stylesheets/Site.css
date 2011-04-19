@@ -56,6 +56,9 @@ table
 /* main elements */
 body
 {
+	background-color: #000;
+	background-image: url(../images/bg.jpg);
+	background-repeat: no-repeat;
     font-size: 1em;
     color: #006666;
     font-family: Verdana, Geneva, sans-serif;
@@ -89,7 +92,6 @@ p, ul {
     float: left;
     width: 100%;
     height: auto;
-    background-color: #000;
     text-align: center;
 }
 
@@ -107,7 +109,6 @@ p, ul {
     float: left;
     width: 100%;
     min-height: 400px;
-    background-color: #033a3d;
 }
 
 #container
