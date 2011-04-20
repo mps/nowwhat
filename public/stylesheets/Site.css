@@ -59,6 +59,7 @@ body
 	background-color: #000;
 	background-image: url(../images/bg.jpg);
 	background-repeat: no-repeat;
+	background-position:center top;
     font-size: 1em;
     color: #006666;
     font-family: Verdana, Geneva, sans-serif;
@@ -89,15 +90,16 @@ p, ul {
 
 #header
 {
-    float: left;
-    width: 100%;
-    height: auto;
+	padding: 50px 0 0 0;
+	background: url(../images/logo.png) center top no-repeat;
+	width: 584px;
+    height: 138px;
     text-align: center;
 }
 
 #logo
 {
-    float: left;
+	float: left;
     font-size: 3.8em;
     margin-top: 5px;
     color: #fff;
