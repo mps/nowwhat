@@ -7,43 +7,43 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
-	<div id="fb-root">
-	    </div>
+	<div class="container">
 	    <div class="page">
 	        <div id="header">
-	            <div id="container">
-	                <div id="logo">
-	                </div>
-	            </div>
+			    <div class="nav">
+					<ul>
+		        		<li class="first"><a href="/"><img src="images/logo.png" alt="Now What Movement" /></a></li>
+		        		<li><a href="/"><img src="images/url.png" alt="Now What Movement" /></a></li>
+		        		<li><a href="http://www.facebook.com/"><img src="images/facebook.png" alt="Like us on Facebook" /></a></li>
+		        		<li><a href="http://www.twitter.com/"><img src="images/twitter.png" alt="Follow us on Twitter" /></a></li>
+					</ul>
+	        	</div>
 	        </div>
 	        <div id="content">
 	            <div id="container">
 	                <div id="left-sidebar">
-	                    <h1>
-	                        A Gathering of Students for:</h1>
-	                    <ul id="menu">
-	                        <li><a href="/worship" 		onmouseover="document.worship.src='/images/worship-hov.png'"
+	                    <h1>A Gathering of Students for:</h1>
+	                    <div id="menu">
+	                        <p><a href="/worship" onmouseover="document.worship.src='/images/worship-hov.png'"
 	                            onmouseout="document.worship.src='/images/worship.png'">
-	                            <img name="worship" src="/images/worship.png" /></a> </li>
-	                        <li><a href="/gospel" onmouseover="document.gospel.src='/images/gospel-hov.png'"
+	                            <img name="worship" src="/images/worship.png" /></a> </p>
+	                        <p><a href="/gospel" onmouseover="document.gospel.src='/images/gospel-hov.png'"
 	                            onmouseout="document.gospel.src='/images/gospel.png'">
-	                            <img name="gospel" src="/images/gospel.png" /></a> </li>
-	                        <li><a href="/missions" onmouseover="document.missions.src='/images/mission-hov.png'"
+	                            <img name="gospel" src="/images/gospel.png" /></a> </p>
+	                        <p><a href="/missions" onmouseover="document.missions.src='/images/mission-hov.png'"
 	                            onmouseout="document.missions.src='/images/missions.png'">
-	                            <img name="missions" src="/images/missions.png" /></a> </li>
-	                    </ul>
+	                            <img name="missions" src="/images/missions.png" /></a> </p>
+	                    </div>
 	                </div>
 	                <div id="right-sidebar">
 						<%= yield %>
 	                </div>
 	            </div>
 	        </div>
-	        <div id="footer">
-	            <div id="container">
-	                An IdleFusion Project
-	            </div>
-	        </div>
-	    </div>
-
+			        <div id="footer">
+			                <a href="http://idlefusion.com">An IdleFusion Project</a>
+			        </div>
+	    </div>	
+	</div>
 </body>
 </html>
